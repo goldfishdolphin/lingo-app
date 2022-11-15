@@ -1,4 +1,10 @@
-# Lingo App
+# Lingo Dictionary App
+
+The prototype and framework of the app has been designed using Figma. 
+
+<img src="src/images/prototype.png" width= 100 alt='prototype'>
+<img src="src/images/wireframe.png" width=150 align='right'>
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -69,4 +75,3 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-
