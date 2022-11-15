@@ -3,7 +3,10 @@
 The prototype and framework of the app has been designed using Figma. 
 
 <img src="src/images/prototype.png" width= 100 alt='prototype'>
-<img src="src/images/wireframe.png" width=150 align='right'>
+
+<img src="src/images/wireframe.png" width=150 alt='wireframe'>
+
+
 
 
 # Getting Started with Create React App
