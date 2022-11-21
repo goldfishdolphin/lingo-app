@@ -1,18 +1,19 @@
-import React, { useState } from 'react';
-import './App.css';
-import Header from './components/Header';
-import Search from './components/Search';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import { Routes, Route, BrowserRouter } from 'react-router-dom';
-import Results from './components/Results';
-function App() {
-  const [searchTerm, setSearchTerm] = useState('');
+import React, { useState } from "react";
+import Header from "./components/Header";
+import FormSearch from "./components/FormSearch";
+
+const App = () => {
   return (
-    <div>
+    <>
       <Header />
-      <Search setSearchTerm={setSearchTerm} />
-      <Results searchTerm={searchTerm} />
-    </div>
+      <div className="container-fluid">
+        <div className="row">
+          <FormSearch />
+        </div>
+
+      </div>
+    </>
   );
-}
+};
+
 export default App;

@@ -1,11 +1,11 @@
 import axios from "axios";
-const wordApi = axios.create({
-    baseURL: "https://api.dictionaryapi.dev/api/v2/entries/en/"
+import { useEffect } from "react";
+const getApi = axios.create({
+    baseURL: "https://api.dictionaryapi.dev/api/v2/entries/en",
 });
 
-export const getMeanings = (searchTerm) => {
-    return wordApi.get(`${searchTerm}`).then((res) => {
-        console.log(res.data);
+export const getMeanings = (word) => {
+    return getApi.get(`/${word}`).then((res) => {
         return res.data;
     });
 };
