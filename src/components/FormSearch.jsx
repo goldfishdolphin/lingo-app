@@ -4,6 +4,8 @@ import headphones from "../images/headphones.png";
 import Card from 'react-bootstrap/Card';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 import background from '../images/background.png';
 import '../App.css';
 function FormSearch({ }) {
@@ -34,26 +36,28 @@ function FormSearch({ }) {
 
     return (
         <div>
-            <Form onClick={handleSubmit}  >
-                <input
-                    type="text"
-                    className="form"
-                    placeholder="Search the meanings of ...."
-                    color="none"
-                    id="floatingInput"
-                    value={word}
-                    onChange={(e) => { setWord(e.target.value); }}
-                    style={{ "background-color": "#D9D9D9", padding: "5px" }}
-                />
-                <Button variant="primary">Search </Button>
+            <Form onSubmit={handleSubmit}  >
+                <Form.Group className="m-4">
+                    <Row>
+                        <Col>
+                            <Form.Control type="text"
+                                className="text-black"
+                                onChange={(e) => { setWord(e.target.value); }} value={word}
+                                style={{ "background-color": "#D9D9D9", padding: "5px" }}
+                                placeholder="Search the meanings of ...."
+                            />
+                        </Col>
+                        <Col> <Button variant="primary" type="submit">Search </Button></Col>
+                    </Row>
+                </Form.Group>
             </Form>
 
-            <Card className="bg-light text-black" style={{ textAlign: "center" }}>
+            <Card className=" bg-light text-black" style={{ textAlign: "center" }}>
                 <Card.Img variant="center" src={background} alt="Card image" />
                 <Card.ImgOverlay>
                     <Card.Text >
                         {
-                            sound ? <p className="">Hear: <img src={headphones} onClick={playAudio} /> </p> : ''
+                            sound ? <h5 className="">Hear: <img src={headphones} onClick={playAudio} /> </h5> : ''
                         }
                         {phonetics ? <h5 className="">Phonetics:{phonetics}</h5> : ''}
                         {meanings ? <div>

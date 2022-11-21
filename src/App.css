@@ -1,5 +1,3 @@
-
-
 .title {
   background-color: white;
   display: flex;
@@ -9,6 +7,7 @@
   font-size: calc(10px + 2vmin);
   color:black;
   font-family: 'Cantora One';
+  padding-top: 50px;
 }
 
 .search-bar{
@@ -17,13 +16,12 @@
   align-items: center;
 }
 
-.form{
-  align-items: center;
-}
 .example
   {
-    position: absolute;
+    position:absolute;
     bottom: 0;
     right: 0;
     left: 0;
+    padding-left: 100px;
+    padding-right: 100px;
   }
