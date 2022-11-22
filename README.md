@@ -5,9 +5,9 @@ Lingo Dictionary is an App that renders data from an [API](https://dictionaryapi
 - The App is created using React.js and React Bootstrap.
 - Lingo Dictionary App is deployed on Netlify. The link of deployed app is  https://lingo-dictionary.netlify.app/
 
-<img src="src/images/prototype.png" width= 100 alt='prototype' display='inline'>
+<img src="src/images/prototype.png" width= 100 alt='prototype'>
 
-<img src="src/images/wireframe.png" width=150 alt='wireframe'display='inline'>
+<img src="src/images/wireframe.png" width=150 alt='wireframe' >
 
 
 # Getting Started with Create React App
